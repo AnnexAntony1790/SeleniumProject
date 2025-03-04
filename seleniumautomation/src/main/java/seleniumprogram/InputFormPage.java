@@ -15,7 +15,7 @@ public class InputFormPage extends BaseClass {
 	}
 	public void getTotal()
 	{
-		//get total method to send keys and click on button
+		//get total method to send keys and click on button 
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
 		WebElement valueA=driver.findElement(By.id("value-a"));
 		valueA.sendKeys("12");
