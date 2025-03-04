@@ -22,7 +22,7 @@ public class FileUploadExample {
 		driver.get("https://www.ilovepdf.com/pdf_to_word");
 		driver.manage().window().maximize();
 		WebElement chooseFile = driver.findElement(By.xpath("//span[text()='Select PDF file']"));
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));//WebDriverWait is used
 		wait.until(ExpectedConditions.elementToBeClickable(chooseFile));
 		chooseFile.click();
 		chooseFile.sendKeys("C:\\Annex\\Java\\Assignments\\pdf\\Aggregation.pdf");
